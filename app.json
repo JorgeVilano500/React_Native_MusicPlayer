@@ -4,7 +4,6 @@
     "slug": "MusicPlayer",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -18,7 +17,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": {
+          "audio": "audio"
+        }
+      }
     },
     "android": {
       "adaptiveIcon": {
